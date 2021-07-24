@@ -72,7 +72,7 @@ namespace SlotMachine
         private void Spinbutton_Click(object sender, EventArgs e)
         {
 
-            if(balance < 2)
+            if (balance < 2)
             {
                 goto gotoend;
             }
@@ -95,7 +95,7 @@ namespace SlotMachine
             }
 
             // slot 2 hold
-            if (hold2toggle== false)
+            if (hold2toggle == false)
             {
                 // slot 2 rand
                 slot2 = slot2rand.Next(1, 10);
@@ -110,7 +110,7 @@ namespace SlotMachine
 
 
             // reset bonus
-            if(ishold == true)
+            if (ishold == true)
             {
                 ishold = false;
                 hold1toggle = false;
@@ -314,7 +314,7 @@ namespace SlotMachine
                     goto jumpsetimage3;
             }
 
-          jumpsetimage3:
+        jumpsetimage3:
 
             switch (slot3)
             {
@@ -364,7 +364,7 @@ namespace SlotMachine
                     goto hold;
             }
 
-            hold:
+        hold:
 
             // picks a slot
             Random slotrand = new Random();
@@ -380,7 +380,7 @@ namespace SlotMachine
 
 
             // Value to award bonus
-            if(bonus == 10)
+            if (bonus == 10)
             {
                 // Choses bonus type
                 switch (bonuspick)
@@ -435,7 +435,7 @@ namespace SlotMachine
             }
 
 
-            gotoend:;
+        gotoend:;
         }
 
         private void Holdbutton_Click(object sender, EventArgs e)
@@ -468,26 +468,26 @@ namespace SlotMachine
                 switch (slotnum)
                 {
                     case 1:
-                        slot1 = slot1 - 1;
-                        if (slot1 < 1)
+                        slot1++;
+                        if (slot1 > 9)
                         {
-                            slot1 = 9;
+                            slot1 = 1;
                         }
                         break;
 
                     case 2:
-                        slot2 = slot2 - 1;
-                        if (slot2 < 1)
+                        slot2++;
+                        if (slot2 > 9)
                         {
-                            slot2 = 9;
+                            slot2 = 1;
                         }
                         break;
 
                     case 3:
-                        slot3 = slot3 - 1;
-                        if (slot3 < 1)
+                        slot3++;
+                        if (slot3 > 9)
                         {
-                            slot3 = 9;
+                            slot3 = 1;
                         }
                         break;
 

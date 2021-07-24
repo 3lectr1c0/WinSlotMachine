@@ -6,7 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>SlotMachine.Program</StartupObject>
     <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <Copyright>3lectr1c0</Copyright>
     <PackageProjectUrl>https://github.com/3lectr1c0/Slot-Machine-Win-Form-App</PackageProjectUrl>
     <Authors>3lectr1c0</Authors>
@@ -15,6 +15,7 @@
     <PackageIcon>seven.jpg</PackageIcon>
     <PackageIconUrl />
     <ApplicationIcon>seven.ico</ApplicationIcon>
+    <AssemblyOriginatorKeyFile>3lectr1c0.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
